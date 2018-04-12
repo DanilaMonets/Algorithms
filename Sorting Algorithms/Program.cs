@@ -120,6 +120,7 @@ namespace Sorting_Algorithms
                     }
                 }
             }
+        }
         public static void quickSort(int[] arr, int left, int right)
         {
             int i = left, j = right;
@@ -155,8 +156,6 @@ namespace Sorting_Algorithms
                 quickSort(arr, i, right);
             }
         }
-
-    }
         public static void countingSort(int[] array)
 
         {
