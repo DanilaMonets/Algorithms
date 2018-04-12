@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace Sorting_Algorithms
 {
-    class Program
-    {
         static class Algorithm
         {
             public static void selectionSort(int[] arr, int n)
@@ -46,6 +44,21 @@ namespace Sorting_Algorithms
                     }
                 }
             }
+            public static void bubbleSort(int[] a, int n)
+            {
+                for (int j = n - 1; j > 0; --j)
+                {
+                    for (int i = 0; i < j; ++i)
+                    {
+                        if (a[i] > a[i + 1])
+                        {
+                            int toSwap = a[i];
+                            a[i] = a[i + 1];
+                            a[i + 1] = toSwap;
+                        }
+                    }
+                }
+            }
         }
         class MainClass
         {
@@ -55,4 +68,4 @@ namespace Sorting_Algorithms
             }
         }
     }
-}
+
