@@ -155,13 +155,10 @@ namespace Sorting_Algorithms
                 quickSort(arr, i, right);
             }
         }
-<<<<<<< HEAD
 
     }
-        class MainClass
-=======
         public static void countingSort(int[] array)
->>>>>>> a23119c07f557090960b034c7ff857a21666f5f4
+
         {
             int min = array.Min();
             int fmin;
